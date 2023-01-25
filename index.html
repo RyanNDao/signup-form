@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+<div class="page-container">
+    <div class="sidebar">
+        <div class="sidebar-logo"><img src="./images/clipboard-logo.png">RYAN'S SIGNUP SHEET<img src="./images/clipboard-logo.png">
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="top-container">
+            Sign up for my super exciting form! This form will allow me to harvest your soul.
+            This form is written with soully(pun-intended) for your best interest in mind. Trust me.
+        </div>
+        <div class="form-container">
+            <form id="main-form">
+                <h1>GIVE ME YOUR SOUL</h1>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="first-name">First Name<span aria-label="required">*</span></label>
+                        <input type="text" id="first-name" placeholder="Rob" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="email">Email Address<span aria-label="required">*</span></label>
+                        <input type="email" id="email" placeholder="yourspirit@soul.com" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="pass">Password<span aria-label="required">*</span></label>
+                        <input type="password" id="pass" pattern=".{8,}" title="Use a password with more than 8 characters" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="confirm-pass">Confirm Password<span aria-label="required">*</span></label>
+                        <input type="password" id="confirm-pass" pattern=".{8,}" title="Use a password with more than 8 characters" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="button-container">
+            <button id="submit-button" type="submit" form="main-form">GIVE SOUL</button>
+        </div>
+
+        <div class="bottom-container">
+            Already signed a deal with me? <a href="./index.html"><b>Click here</b></a>!
+        </div>
+    </div>
+</div>
+</body>
+</html>

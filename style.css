@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "quantico";
+    src: url("./fonts/quantico-regular-webfont.woff") format("woff"), 
+    url("./fonts/quantico-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "kosugi-maru";
+    src: url("./fonts/kosugimaru-regular-webfont.woff") format("woff"), 
+    url("//fonts/kosugimaru-regular-webfont.woff2") format("woff2");
+}
+
+img{
+    max-width: 60%;
+    max-height: 60%;
+    margin: .5rem;
+}
+
+body{
+    margin: 0;
+}
+
+.page-container{
+    display: flex;
+    height: 100vh;
+    width: auto;
+}
+
+.sidebar{
+    background-image: url("./images/clipboard.jpg");
+    width: 40%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-container{
+    background-color: lightgrey;
+    width: 60%;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    font-family: Kosugi-Maru, Arial, Helvetica, sans-serif;
+    gap: 50px;
+}
+
+.sidebar-logo{
+    width: 100%;
+    height: 150px;
+    margin-top: 20%;
+    font-size: 5vh;
+    background-color: rgba(233, 220, 220, 0.871);
+    font-family: Quantico, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: brown;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-container{
+    padding: 0px 60px;
+    margin-top: 50px;
+}
+
+form h1{
+    font-family: Quantico, Arial, Helvetica, sans-serif;
+}
+
+.form-container{
+    background-color: whitesmoke;
+    padding: 0px 30px 30px 30px;
+}
+
+.form-row{
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    color:lightslategray;
+}
+
+.form-input input{
+    width: 300px;
+    height: 20px;
+    border-radius: .5rem;
+    margin-top: 5px;
+}
+
+#submit-button{
+    height: 60px;
+    width: 240px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    border-color: grey;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+.bottom-container{
+    padding-left: 30px;
+    font-size: 1.25rem;
+    margin-top: -20px;
+}
+
+span[aria-label="required"]{
+    color:maroon;
+}
+
+input:required {
+    border: 1px solid black;
+}
+  
+input:optional {
+    border: 1px solid silver;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
